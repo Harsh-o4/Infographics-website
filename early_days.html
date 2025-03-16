@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Early Days</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- The sidebar -->
+<div class="sidebar">
+    <a href="index.html">Introduction to Social Media</a>
+    <a class="active" href="early_days.html">The Early Days (1970s-1990s)</a>
+    <a href="friendster.html">Friendster and MySpace</a>
+    <a href="facebook.html">Facebook takes over</a>
+    <a href="twitter.html">Twitter and Short Updates</a>
+    <a href="instagram.html">Instagram and Visual Sharing</a>
+    <a href="tiktok.html">TikTok and Short Videos</a>
+    <a href="business.html">Social Media & Businesses</a>
+    <a href="challenges.html">Challenges of Social Media</a>
+    <a href="future.html">Future of Social Media</a>
+    </div>
+  
+  <!-- Page content -->
+  <div class="content">
+  
+    <div class="image-text-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLdezDRnxGO29kMgI26kuTU_DmPWsiMSfQLA&s" alt="Descriptive image">
+    <p style="font-size:x-large;">
+        Social media didn’t begin with fancy apps. In the 1970s, people used something called <b>bulletin board systems, or BBS</b>. These were basic online spaces where users could leave messages. It was slow, but it was a start.
+    </p>
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <p style="font-size:x-large;" >
+            By the 1990s, the internet was growing fast. Websites like <b>Six Degrees</b> appeared in 1997. It let people make profiles and list their friends. This was the <b>first real social network</b>, even if it was simple.
+        </p>
+        <img src="https://t4.ftcdn.net/jpg/05/30/80/47/360_F_530804747_E7T8BJkDuezBkwQrqy96pw8CHjvFasBA.jpg" alt="Descriptive image">
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <img src="https://i0.wp.com/sixdegrees.home.blog/wp-content/uploads/2019/03/screen-shot-2019-03-10-at-2.09.40-pm.png?ssl=1">
+        <p style="font-size:x-large;">
+            The early days of social media were very different from today. Back then, <b>only a few people had computers</b>, and the internet was slow. Bulletin board systems needed a phone line to connect, and <b>you could only talk to a small group</b>. Still, it was exciting because it was new. Then came Six Degrees, named after the idea that everyone is connected by six people or fewer. Users could send messages and see their friends’ profiles. 
+        </p>
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <p style="font-size:x-large;" >
+            Other early sites popped up too, like <b>Classmates</b>.com. It helped people find old school friends. These platforms were limited but showed a growing interest. The world was getting ready for more.
+        </p>
+        <img src="https://media.istockphoto.com/id/174796091/photo/old-phone.jpg?s=612x612&w=0&k=20&c=DUVCBkS6i8lXtm29b8yL7wppvFEjJ3jY0cxcytbKLGU=">
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlIvDQQG7KmHwHWRL1JIlgafqyb9UlJenGBg&s">
+      <p style="font-size:x-large;">
+        The 1990s ended with the internet booming. Early social media was basic, but it planted seeds. Soon, <b>bigger and better platforms would take over</b>. The next page will show how!
+      </p>
+  </div>
+
+
+  </div>
+
+
+
+<style>
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #40514E;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #11999E;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #1e5356;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .image-text-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+      width: 100%; /* Full width */
+    }
+
+    .image-text-container img {
+      max-width: 100%;
+      height: auto;
+      width: 300px; /* Fixed image width on desktop */
+      border-radius: 10px;
+    }
+
+    .image-text-container p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      flex: 1; /* Let text take remaining space */
+    }
+
+    /* Responsive behavior: Stack vertically on small screens */
+    @media screen and (max-width: 768px) {
+      .image-text-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .image-text-container img {
+        width: 100%; /* Full width image on small screens */
+        max-width: 400px;
+      }
+
+      .image-text-container p {
+        text-align: justify;
+      }
+    }
+</style>
+</body>
+</html>

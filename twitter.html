@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- The sidebar -->
+<div class="sidebar">
+    <a href="index.html">Introduction to Social Media</a>
+    <a href="early_days.html">The Early Days (1970s-1990s)</a>
+    <a href="friendster.html">Friendster and MySpace</a>
+    <a href="facebook.html">Facebook takes over</a>
+    <a class="active" href="twitter.html">Twitter and Short Updates</a>
+    <a href="instagram.html">Instagram and Visual Sharing</a>
+    <a href="tiktok.html">TikTok and Short Videos</a>
+    <a href="business.html">Social Media & Businesses</a>
+    <a href="challenges.html">Challenges of Social Media</a>
+    <a href="future.html">Future of Social Media</a>
+  </div>
+  
+  <!-- Page content -->
+  <div class="content">
+  
+    <div class="image-text-container">
+    <img src="https://www.logodesign.org/wp-content/uploads/2023/06/download-23.png">
+    <p style="font-size:x-large;">
+        <b>Twitter launched in 2006</b> with a simple idea: short messages. Users could post “tweets” up to 140 characters at first. It was <b>fast and different</b>. People loved it.
+    </p>
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <p style="font-size:x-large;" >
+            Twitter became<b> a place for news and quick thoughts</b>. Celebrities, politicians, and regular people used it. It grew into a global conversation tool.
+        </p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaqWyNXyiVB5VnuxTt80XJO-Hzmp8wn-nW0g&s" alt="Descriptive image">
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <img src="https://cdn.cms-twdigitalassets.com/content/dam/blog-twitter/archive/new_headlines_featureoffersstorybehindthetweet95.thumb.1280.1280.png">
+        <p style="font-size:x-large;">
+            Twitter brought a new style to social media. Unlike Facebook’s long posts, <b>tweets were short and snappy</b>. At first, the limit was 140 characters, later doubled to 280. People used it to share ideas, jokes, or breaking news. During big events—like elections or sports—Twitter buzzed with activity. Hashtags, like #ThrowbackThursday, made it easy to find topics. By 2010, <b>it had millions of users tweeting every day</b>. It wasn’t about fancy pages; it was about speed and simplicity. Famous people like Barack Obama or Taylor Swift joined, making it even bigger. Twitter showed that less could be more. It’s still a key player today.
+        </p>
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <p style="font-size:x-large;" >
+            Twitter also <b>changed how we get news</b>. Reporters and eyewitnesses post updates live. It’s like a megaphone for the world.
+        </p>
+        <img src="https://i0.wp.com/jessicabryson.com/wp-content/uploads/2023/03/freestocks-mw6Onwg4frY-unsplash-scaled.jpg?fit=800%2C534&ssl=1">
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+      <img src="https://www.pixartprinting.co.uk/blog/wp-content/uploads/2021/03/hash.png">
+      <p style="font-size:x-large;">
+        Though it’s not the biggest platform, <b>Twitter’s impact is huge</b>. It proved short messages could connect people. The next page looks at visuals!
+      </p>
+  </div>
+
+
+
+  </div>
+
+
+
+<style>
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #40514E;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #11999E;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #1e5356;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .image-text-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+      width: 100%; /* Full width */
+    }
+
+    .image-text-container img {
+      max-width: 100%;
+      height: auto;
+      width: 300px; /* Fixed image width on desktop */
+      border-radius: 10px;
+    }
+
+    .image-text-container p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      flex: 1; /* Let text take remaining space */
+    }
+
+    /* Responsive behavior: Stack vertically on small screens */
+    @media screen and (max-width: 768px) {
+      .image-text-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .image-text-container img {
+        width: 100%; /* Full width image on small screens */
+        max-width: 400px;
+      }
+
+      .image-text-container p {
+        text-align: justify;
+      }
+    }
+</style>
+</body>
+</html>

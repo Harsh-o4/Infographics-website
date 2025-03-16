@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- The sidebar -->
+<div class="sidebar">
+    <a href="index.html">Introduction to Social Media</a>
+    <a href="early_days.html">The Early Days (1970s-1990s)</a>
+    <a href="friendster.html">Friendster and MySpace</a>
+    <a class="active" href="facebook.html">Facebook takes over</a>
+    <a href="twitter.html">Twitter and Short Updates</a>
+    <a href="instagram.html">Instagram and Visual Sharing</a>
+    <a href="tiktok.html">TikTok and Short Videos</a>
+    <a href="business.html">Social Media & Businesses</a>
+    <a href="challenges.html">Challenges of Social Media</a>
+    <a href="future.html">Future of Social Media</a>
+  </div>
+  
+  <!-- Page content -->
+  <div class="content">
+  
+    <div class="image-text-container">
+    <img src="https://i.pinimg.com/736x/71/01/d5/7101d598cb5156e5670771476183ae8f.jpg">
+    <p style="font-size:x-large;">
+        In 2004, <b>Facebook started at Harvard University</b>. It was just for students at first, but it grew fast. By 2006, anyone could join. It became the king of social media.
+    </p>
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <p style="font-size:x-large;" >
+            <b>Facebook was simple and clean</b>, unlike MySpace. It focused on connecting people with real friends. Users could post updates, photos, and more. It was <b>easy to use</b>. Facebook changed the game for social media forever. You could share your life, join groups, and even play games. Businesses started using it too, to sell things or talk to customers.
+        </p>
+        <img src="https://img.freepik.com/premium-photo/multiracial-friends-taking-big-group-selfie-shot-smiling-camera_169160-779.jpg" alt="Descriptive image">
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/mark-zuckerberg-ceo-of-meta-testifies-before-the-senate-news-photo-1739998545.pjpeg?crop=0.553xw:0.827xh;0.283xw,0&resize=640:*">
+        <p style="font-size:x-large;">
+            <b>Mark Zuckerberg</b> created it as a way for college students to connect. Soon, it spread to other schools, then the whole world. By 2012, <b>it had over a billion users</b>—huge numbers! People liked it because it was less messy than MySpace and more personal. Today, it’s still one of the biggest platforms out there. It added features like video and Marketplace over time. <b>Facebook made social media a daily habit for millions.</b> It’s hard to imagine life without it now.
+
+        </p>
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <p style="font-size:x-large;" >
+            Other platforms tried to compete, but Facebook stayed strong. It bought Instagram and WhatsApp to grow even more. It’s<b> a giant in the online world</b>.
+        </p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlkgK3xB-AazZo2gYv2UEjmdFkdhEJGAneCw&s">
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+      <img src="https://s3.amazonaws.com/clearvoice-media/asg_9bYqDe0fTeyQlIEY%2Fart_8VqSzMtOkMroJFpJ%2F1511978396266-screenshot-www.facebook.com+2017-11-29+11-50-46-447.png">
+      <p style="font-size:x-large;">
+        Facebook’s success showed that social media could be simple and powerful. <b>It set the stage for new apps</b>. The evolution kept going!
+      </p>
+  </div>
+
+
+
+  </div>
+
+
+
+<style>
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #40514E;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #11999E;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #1e5356;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .image-text-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+      width: 100%; /* Full width */
+    }
+
+    .image-text-container img {
+      max-width: 100%;
+      height: auto;
+      width: 300px; /* Fixed image width on desktop */
+      border-radius: 10px;
+    }
+
+    .image-text-container p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      flex: 1; /* Let text take remaining space */
+    }
+
+    /* Responsive behavior: Stack vertically on small screens */
+    @media screen and (max-width: 768px) {
+      .image-text-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .image-text-container img {
+        width: 100%; /* Full width image on small screens */
+        max-width: 400px;
+      }
+
+      .image-text-container p {
+        text-align: justify;
+      }
+    }
+</style>
+</body>
+</html>

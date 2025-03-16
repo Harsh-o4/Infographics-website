@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendster & MySpace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- The sidebar -->
+<div class="sidebar">
+    <a  href="index.html">Introduction to Social Media</a>
+    <a href="early_days.html">The Early Days (1970s-1990s)</a>
+    <a class="active" href="friendster.html">Friendster and MySpace</a>
+    <a href="facebook.html">Facebook takes over</a>
+    <a href="twitter.html">Twitter and Short Updates</a>
+    <a href="instagram.html">Instagram and Visual Sharing</a>
+    <a href="tiktok.html">TikTok and Short Videos</a>
+    <a href="business.html">Social Media & Businesses</a>
+    <a href="challenges.html">Challenges of Social Media</a>
+    <a href="future.html">Future of Social Media</a>
+</div>
+
+  <!-- Page content -->
+  <div class="content">
+    
+    <div class="image-text-container">
+    <img src="https://miro.medium.com/v2/resize:fit:1262/1*JCKaY6vwp4ZuRqoaXebsUQ.jpeg" alt="Descriptive image">
+    <p style="font-size:x-large;">
+        The 2000s brought bigger social media platforms. Friendster launched in 2002 and let people connect with friends of friends. It grew fast and had millions of users. This was a new era.
+    </p>
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <p style="font-size:x-large;" >
+            Then came MySpace in 2003. It was colorful and let users customize their pages. People could add music, photos, and more. MySpace became a huge hit, especially with teens.ySpace changed social media in a big way. Before it, platforms were simple and plain. MySpace let users show their personality with bright backgrounds and songs. By 2006, it was the most visited site in the U.S., beating even Google. People used it to make friends, share art, and even find bands. 
+        </p>
+        <img src="https://i.pinimg.com/736x/97/77/13/97771356db04bef1b0620a75f8794da0.jpg" alt="Descriptive image">
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <img src="https://i.pinimg.com/564x/e2/e2/d2/e2e2d2ceb76c214da23826ccaae8f895.jpg">
+        <p style="font-size:x-large;">
+            Friendster was popular too, but it had technical problems and faded. MySpace felt like a party online—everyone wanted to join. At its peak, it had over 100 million users. But it didn’t last forever; new sites were coming. Still, it showed how fun social media could be. The 2000s were a wild time online.
+        </p>
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <p style="font-size:x-large;" >
+            These platforms made social media about more than just talking. They were about creativity and showing who you are. Users loved having control. It was a big step forward.
+        </p>
+        <img src="https://media.istockphoto.com/id/158266761/photo/a-portable-cd-player-with-headphones.jpg?s=612x612&w=0&k=20&c=WEMu38-Zdxcfw0JtQ2DnDYZm1VgoC_4iLXxh_DAJdhA=">
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+      <img src="https://logos-world.net/wp-content/uploads/2023/05/Friendster-Logo.jpg">
+      <p style="font-size:x-large;">
+        Friendster and MySpace didn’t stay on top, but they mattered. They got millions of people hooked on social media. The next platforms would build on this success.
+      </p>
+  </div>
+
+
+
+  </div>
+
+
+
+<style>
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #40514E;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #11999E;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #1e5356;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .image-text-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+      width: 100%; /* Full width */
+    }
+
+    .image-text-container img {
+      max-width: 100%;
+      height: auto;
+      width: 300px; /* Fixed image width on desktop */
+      border-radius: 10px;
+    }
+
+    .image-text-container p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      flex: 1; /* Let text take remaining space */
+    }
+
+    /* Responsive behavior: Stack vertically on small screens */
+    @media screen and (max-width: 768px) {
+      .image-text-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .image-text-container img {
+        width: 100%; /* Full width image on small screens */
+        max-width: 400px;
+      }
+
+      .image-text-container p {
+        text-align: justify;
+      }
+    }
+</style>
+</body>
+</html>

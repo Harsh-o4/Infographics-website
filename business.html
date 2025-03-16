@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- The sidebar -->
+<div class="sidebar">
+    <a href="index.html">Introduction to Social Media</a>
+    <a href="early_days.html">The Early Days (1970s-1990s)</a>
+    <a href="friendster.html">Friendster and MySpace</a>
+    <a href="facebook.html">Facebook takes over</a>
+    <a href="twitter.html">Twitter and Short Updates</a>
+    <a href="instagram.html">Instagram and Visual Sharing</a>
+    <a href="tiktok.html">TikTok and Short Videos</a>
+    <a class="active" href="business.html">Social Media & Businesses</a>
+    <a href="challenges.html">Challenges of Social Media</a>
+    <a href="future.html">Future of Social Media</a>
+  </div>
+  
+  <!-- Page content -->
+  <div class="content">
+  
+    <div class="image-text-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReBlSi-Ul_iH-ssdIB-EK1OEl9rgNs4G0O1w&s" alt="Descriptive image">
+    <p style="font-size:x-large;">
+        <b>Social media isn’t just for fun—it’s for business too.</b> Companies use it to sell products and talk to customers. It started small but grew huge.
+    </p>
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <p style="font-size:x-large;" >
+            Platforms like <b>Facebook</b> and <b>Instagram</b> have ads and shops. Businesses can pay to reach more people. It’s a cheap way to market.Businesses jumped on social media as it got popular. They saw it as a way to connect with customers.
+        </p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL0aSc3fnz8srXNskTZsDpQcNbbUXJT-GQTw&s" alt="Descriptive image">
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvmTsZLJgduRF4sj_A7qhUn9aQydQ5Bdb9-g&s">
+        <p style="font-size:x-large;">
+            In the early days, they just made pages to chat with fans. Now, it’s a whole strategy. Facebook ads target people based on what they like—super smart! Instagram lets you buy stuff right from a post. TikTok has influencers who show off products in videos. By 2025, <b>companies spend billions on social media ads</b>. Small shops and big brands both use it. It’s not just selling; it’s building trust with customers. They can ask questions or complain online too. Social media turned into a giant store and customer service desk. It’s a big part of its evolution.
+        </p>
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <p style="font-size:x-large;" >
+            Even job hunting changed. People use LinkedIn to find work. <b>Social media connects employers and workers</b>. Businesses keep finding new ways to use these platforms. It’s a money-making machine now.
+        </p>
+        <img src="https://content.linkedin.com/content/dam/brand/site/img/logo/do/do-approved-assets.png">
+    </div>
+
+
+  </div>
+
+
+
+<style>
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #40514E;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #11999E;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #1e5356;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .image-text-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+      width: 100%; /* Full width */
+    }
+
+    .image-text-container img {
+      max-width: 100%;
+      height: auto;
+      width: 300px; /* Fixed image width on desktop */
+      border-radius: 10px;
+    }
+
+    .image-text-container p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      flex: 1; /* Let text take remaining space */
+    }
+
+    /* Responsive behavior: Stack vertically on small screens */
+    @media screen and (max-width: 768px) {
+      .image-text-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .image-text-container img {
+        width: 100%; /* Full width image on small screens */
+        max-width: 400px;
+      }
+
+      .image-text-container p {
+        text-align: justify;
+      }
+    }
+</style>
+</body>
+</html>

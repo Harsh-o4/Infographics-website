@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- The sidebar -->
+<div class="sidebar">
+    <a href="index.html">Introduction to Social Media</a>
+    <a href="early_days.html">The Early Days (1970s-1990s)</a>
+    <a href="friendster.html">Friendster and MySpace</a>
+    <a href="facebook.html">Facebook takes over</a>
+    <a href="twitter.html">Twitter and Short Updates</a>
+    <a href="instagram.html">Instagram and Visual Sharing</a>
+    <a href="tiktok.html">TikTok and Short Videos</a>
+    <a href="business.html">Social Media & Businesses</a>
+    <a href="challenges.html">Challenges of Social Media</a>
+    <a class="active" href="future.html">Future of Social Media</a>
+  </div>
+  
+  <!-- Page content -->
+  <div class="content">
+  
+    <div class="image-text-container">
+    <img src="https://images-cdn.ubuy.co.in/64c44c12c0ff597fab77f0a1-oculus-quest-64gb-vr-headset.jpg" alt="Descriptive image">
+    <p style="font-size:x-large;">
+       <b> What’s next for social media? </b>It’s hard to say, but it’ll keep changing. New tech like virtual reality might play a role. The future looks wild with the endless amount of possibilities of applications of social media.
+    </p>
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <p style="font-size:x-large;" >
+            Experts think social media could get more personal. Apps might <b>use AI to show exactly what you want</b>. It’s already starting. People get ads for things they like. It could go further, with more tailored content. That might make social media more fun—or more addictive.
+        </p>
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20230626/pngtree-animated-3d-illustration-of-a-cute-ai-robot-greeting-with-cartoon-image_3682359.jpg" alt="Descriptive image">
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <img src="https://images.bannerbear.com/direct/4mGpW3zwpg0ZK0AxQw/requests/000/073/213/013/0Mn5r3E1XY0JvMXn6WPoD9kg7/3979f156fbc3b92cdfc5ee0187869b86feee17c4.jpg">
+        <p style="font-size:x-large;">
+            The future of social media is <b>exciting and unknown</b>. Virtual reality could let us hang out in 3D worlds, not just screens. Imagine “visiting” friends online like in a game! AI will make it smarter—guessing what you’ll like before you do. Some say the “<b>metaverse</b>”, a mix of real and virtual life, is coming. Facebook’s parent company, Meta, is betting on it. Others think short videos will keep growing, or new apps will pop up. Privacy might get better—or worse. Whatever happens, it’ll fit how we live in 2030 or beyond. <b>Social media’s evolution never stops.</b> We’ve come so far already!
+        </p>
+    </div>
+
+    <br>
+
+    <div class="image-text-container">
+        <p style="font-size:x-large;" >
+            People will keep using it to connect and create. It might look different, but the idea stays. Connection is key. <b>From BBS to the metaverse, social media’s story is amazing.</b> Its future will surprise us. Thanks for exploring it!
+        </p>
+        <img src="https://info.6connex.com/hs-fs/hubfs/6_Blog/2023/AdobeStock_473715449.jpeg?width=3840&height=2160&name=AdobeStock_473715449.jpeg">
+    </div>
+
+   
+  </div>
+
+
+
+<style>
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #40514E;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #11999E;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #1e5356;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    .image-text-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+      width: 100%; /* Full width */
+    }
+
+    .image-text-container img {
+      max-width: 100%;
+      height: auto;
+      width: 300px; /* Fixed image width on desktop */
+      border-radius: 10px;
+    }
+
+    .image-text-container p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      flex: 1; /* Let text take remaining space */
+    }
+
+    /* Responsive behavior: Stack vertically on small screens */
+    @media screen and (max-width: 768px) {
+      .image-text-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .image-text-container img {
+        width: 100%; /* Full width image on small screens */
+        max-width: 400px;
+      }
+
+      .image-text-container p {
+        text-align: justify;
+      }
+    }
+</style>
+</body>
+</html>
